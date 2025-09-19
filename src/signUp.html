@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="./output.css" rel="stylesheet">
+    <title>Sign Up | Said Hadji</title>
+</head>
+
+<body>
+
+    <!-- Wapper -->
+    <div class="w-full h-screen p-4 bg-gray-50">
+
+        <!-- Container -->
+        <div class="w-full h-full rounded-2xl border border-gray-200 flex justify-center items-center p-4">
+
+            <!-- Sign Up Box -->
+            <div class="flex flex-col w-full sm:w-sm lg:w-xl gap-8">
+
+                <!-- Sign up title-->
+                <div>
+                    <h1 class="text-2xl md:text-5xl font-bold">Sign up</h1>
+                </div>
+
+                <!-- UserName and Email and Password + Confirm Password 'Box' -->
+                <div class="w-full grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    
+                    <!-- UserName input -->
+                    <input type="text" placeholder="User Name"
+                        class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400 transition-all duration-500">
+
+                    <!-- Email input -->
+                    <input type="email" placeholder="Email"
+                        class="px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400 transition-all duration-500">
+
+                    <!-- Password Input + Eye button -->
+                    <div class="w-full relative inline-block">
+                        <input id="passwdInput" type="password" placeholder="Password"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400 transition-all duration-500">
+                        <button id="toggleBtn" class="absolute right-0 bottom-[18%] mr-2 cursor-pointer"><i id="eyeIcone"
+                                class="fas fa-eye"></i></button>
+                    </div>
+
+                    <!-- Confirm Password Input + Eye button -->
+                    <div class="w-full relative inline-block">
+                        <input id="confirmInput" type="password" placeholder="Confirm Password"
+                            class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-gray-400 transition-all duration-500">
+                        <button id="toggleButton" class="absolute right-0 bottom-[18%] mr-2 cursor-pointer"><i id="eyeBtn"
+                                class="fas fa-eye"></i></button>
+                    </div>
+
+                    <!-- Sign up -->
+                    <a href="todist.html"
+                        class="bg-[#5bd5e2] font-medium py-2 rounded-lg text-center hover:bg-[#8fe2ec] duration-500 col-span-1 sm:col-span-2">Sign
+                        up</a>
+                </div>
+
+                <!-- | ------------ or ------------ | -->
+                <div class="flex items-center">
+                    <div class="flex-1 h-px bg-gray-300 rounded-full"></div>
+                    <span class="text-sm text-gray-600 px-6">or</span>
+                    <div class="flex-1 h-px bg-gray-300 rounded-full"></div>
+                </div>
+
+                <!-- Google and Facebook Options -->
+                <div class="flex gap-6 items-center w-full">
+                    <a href="#"
+                        class="w-full bg-gray-200 px-4 py-2 rounded-lg text-center font-medium text-sm sm:text-lg hover:bg-gray-100 duration-500"><i
+                            class="fa-brands fa-google mr-2"></i> Google</a>
+
+                    <a href="#"
+                        class="w-full bg-gray-200 px-4 py-2 rounded-lg text-center font-medium text-sm sm:text-lg hover:bg-gray-100 duration-500"><i
+                            class="fa-brands fa-facebook mr-2"></i> Facebook</a>
+                </div>
+
+                <!-- Sign In option -->
+                <div class="w-full text-center">
+                    <span class="text-gray-600">Already have an account ? <a href="signIn.html"
+                            class="font-medium text-black hover:text-[#5bd5e2] duration-500">Sign In</a></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script>
+
+        // Get elements from the DOM
+        const passwdInput = document.getElementById("passwdInput")
+        const toggleBtn = document.getElementById("toggleBtn")
+        const icon = document.getElementById("eyeIcone")
+
+        // Add click event listener on the toggle icon
+        toggleBtn.addEventListener("click", function() {
+            if (passwdInput.type === 'password') {
+                // If password is hidden -> show it
+                passwdInput.type = 'text'
+                // Change icon from 'eye' to 'eye slash'
+                icon.classList.remove("fa-eye")
+                icon.classList.add("fa-eye-slash")
+            } else {
+                // If password is visible -> hide it
+                passwdInput.type = 'password'
+                // Change icon back to 'eye'
+                icon.classList.remove("fa-eye-slash")
+                icon.classList.add("fa-eye")
+            }
+        })
+
+        // Get elements from the DOM
+        const confirmInput = document.getElementById("confirmInput")
+        const toggleButton = document.getElementById("toggleButton")
+        const eyeBtn = document.getElementById("eyeBtn")
+
+        // Add click event listener on the toggle icon
+        confirmBtn.addEventListener("click", function() {
+            if (confirmInput.type === 'password') {
+                // If password is hidden -> show it
+                confirmInput.type = 'text'
+                // Change icon from 'eye' to 'eye slash'
+                confirm_eyeBtn.classList.remove("fa-eye")
+                confirm_eyeBtn.classList.add("fa-eye-slash")
+            } else {
+                // If password is visible -> hide it
+                confirmInput.type = 'password'
+                // Change icon back to 'eye'
+                confirm_eyeBtn.classList.remove("fa-eye-slash")
+                confirm_eyeBtn.classList.add("fa-eye")
+            }
+        })
+    </script>
+
+
+</body>
+
+</html>

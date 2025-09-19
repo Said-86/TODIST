@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <title>Today Page | Said Hadji</title>
+
+    <style>
+        #sideBar{
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex gap-4 p-4">
+        <div id="sideBar"
+            class="fixed inset-y-0 left-0 w-80 bg-gray-100 m-4 rounded-xl z-50 transform -translate-x-[150%] lg:translate-x-0 transition-all duration-300 overflow-y-scroll custom-scroll">
+            <div class="w-full flex justify-between sticky top-0 bg-gray-100 p-4">
+                <h1 class="font-bold text-2xl">TODIST</h1>
+                <button id="closeSideBar" class="cursor-pointer lg:hidden"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+            <h1>hhh</h1>
+        </div>
+
+        <div class="flex-1 p-4 lg:ml-80">
+            <button id="showSideBar" class="cursor-pointer lg:hidden"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </div>
+
+
+    <script>
+        const sideBar = document.querySelector("#sideBar")
+        const closeBtn = document.querySelector("#closeSideBar")
+        const showBtn = document.querySelector("#showSideBar")
+
+        showBtn.addEventListener('click', () => {
+            sideBar.classList.remove("-translate-x-[150%]")
+        })
+
+        closeBtn.addEventListener('click', () => {
+            sideBar.classList.add("-translate-x-[150%]")
+        })
+    </script>
+
+
+</body>
+
+</html>
